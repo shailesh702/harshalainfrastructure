@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 node_modules/
+=======
+.meteor/local
+.meteor/meteorite
+>>>>>>> 217c8b64759435cb108e0cd32914b751802eaa94
