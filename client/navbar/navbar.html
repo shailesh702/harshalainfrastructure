@@ -1,4 +1,10 @@
 <template name="mainNav">
+
+<div class="container">
+  <div class="page-header">
+    <h1>Harshala Infrastructure</h1>      
+  </div>
+</div>
 	<nav class="navbar navbar-inverse " role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -9,16 +15,18 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/">First</a>
-
-                    </li>
-                    <li><a href="/second" >Second page</a></li>
+                	<li><a href="/">Home</a></li>
+                    <li><a href="/first">First</a></li>
+                    <li><a href="/second">Second Navbar</a></li>
+                    <li><a href="/clientPage">Our clients</a></li>
+                    <li><a href="/about_us">About us</a></li>
+                    <li><a href="/careerPage">Career</a></li>
+                    <li><a href="/contact">Contact us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
+	<div class="container">
        {{> yield }}
     </div>
 </template>
