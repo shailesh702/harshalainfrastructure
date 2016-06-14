@@ -46,8 +46,8 @@
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
-    width: 250px;
+    top: 10px;
+    width: 175px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -55,7 +55,7 @@
 
 .sidebar-nav li {
     text-indent: 20px;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .sidebar-nav li a {
@@ -79,6 +79,7 @@
     height: 65px;
     font-size: 18px;
     line-height: 60px;
+    margin-bottom: 20px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -92,7 +93,7 @@
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+        padding-left: 200px;
     }
 
     #wrapper.toggled {
@@ -100,7 +101,7 @@
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 175px;
     }
 
     #wrapper.toggled #sidebar-wrapper {

@@ -1,0 +1,5 @@
+<template name="upcoming_events">
+	
+	<h2>This is upcoming event page</h2>
+
+</template>
