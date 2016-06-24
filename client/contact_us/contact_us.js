@@ -1,14 +1,28 @@
 
-export const contact = new Mongo.Collection('contact');
+//export const contact = new Mongo.Collection('contact');
 
+Template.contact_us_page.onCreated(function(){
+    var self= this;
+    this.autorun( function() {
+        self.subscribe('contact');        
+    });
+});
 Template.contact_us_page.events({
 	"submit .contact":function (event) {
 		event.preventDefault();
+		//event.defaultPrevented;
+		//alert("hello");
 		var name = event.target.name.value;
 		var email = event.target.email.value;
-		var contact_name = event.target.contact_name.value;
+		var company_name = event.target.company_name.value;
 		var contact_number = event.target.contact_number.value;
 		var comment = event.target.comments.value;
-		Meteor.call("contact",name,email,contact_name,contact_number);
+		//alert(comment);
+		Meteor.call("contact",name,email,company_name,contact_number,comment);
+		event.target.name.value='';
+		event.target.email.value='';
+		event.target.company_name.value='';
+		event.target.contact_number.value='';
+		event.target.comments.value='';
 	}
 });

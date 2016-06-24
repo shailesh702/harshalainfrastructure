@@ -1,6 +1,7 @@
 
 
 #wrapper {
+    /*margin-top: -69px;*/
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -34,12 +35,14 @@
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    /*margin-right: -250px;*/
+    /*margin-left: -50px;*/
 }
 
 /* Sidebar Styles */
@@ -90,7 +93,7 @@
     color: #fff;
     background: none;
 }
-
+@media (max-width:768px){ .footer{position:absolute;width:100%;} }
 @media(min-width:768px) {
     #wrapper {
         padding-left: 200px;
@@ -117,5 +120,29 @@
         position: relative;
         margin-right: 0;
     }
+    .footer{position:fixed;bottom:0;height:60px;width:100%;}
 }
 
+header{
+    background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+    margin-top: -15px;
+}
+.footer {
+  position: fixed;
+  margin-top: 10px;
+  bottom: 0px;
+  width: 100%;
+  
+  height: 60px;
+  /*background-color: #f5f5f5;*/
+}
+nav#footernav {
+        width:100%;
+        height:40px;
+        text-align:center;
+        padding:5px;
+        color: white;
+        background-color:rgba(0, 0, 0, 0.8);
+        /*margin-top:10%;*/
+        border: 1px solid yellow;
+    }
