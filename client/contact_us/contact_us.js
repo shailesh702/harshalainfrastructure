@@ -3,6 +3,7 @@
 
 Template.contact_us_page.onCreated(function(){
     var self= this;
+    Toast.info("Welcome to contact us page");
     this.autorun( function() {
         self.subscribe('contact');        
     });
@@ -19,6 +20,9 @@ Template.contact_us_page.events({
 		var comment = event.target.comments.value;
 		//alert(comment);
 		Meteor.call("contact",name,email,company_name,contact_number,comment);
+		Meteor.call("sendemail",'shh_702@yahoo.co.in','jaiswal.shailesh7@gmail.com','Welcome message','This is test of email sending process.');
+		//Toast.info("Mail sent successfully");
+		alert("Mail sent successfully");
 		event.target.name.value='';
 		event.target.email.value='';
 		event.target.company_name.value='';

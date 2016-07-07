@@ -3,7 +3,6 @@
 <template name="mainSide">
 
     <div id="wrapper">
-
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -11,9 +10,11 @@
                 </li>
                 <li><a href="/">Home</a></li>
                 <li><a href="{{pathFor route='about_us'}}">About us</a></li>
+                <li><a href="/working_area">Working Areas</a></li>
                 <li><a href="/Safety">Safety</a></li>
                 <li><a href="/upcoming_events">Upcoming Events</a></li>
                 <li><a href="/investor">Investors</a></li>
+                <li><a href="/mep">MEP</a></li>
                 <li><a href="/clientPage">Clients</a></li>
                 <li><a href="/careerPage">Career</a></li>
                 <li><a href="/contact">Contact us</a></li>
@@ -22,21 +23,13 @@
         
         <div id="page-content-wrapper" style="margin-left: -40px;width: 100%">
         
-        <header style="padding-bottom: 10px;border: 1px solid black;">
-            <h1>Harshala Infrastructure</h1>
-        </header>
+        {{>header}}
+        
         <div class="container-fluid" style="border:1px solid blue;margin-top:10px;margin-bottom: 50px;">
             {{>yield}}
         </div>
         
-        <footer class="footer">
-        <nav id="footernav" class="navbar-footer container-fluid navbar-inverse navbar-bottom" style="border-radius: 5px;">
-        
-            <div class="container-fluid">       
-                <center><span>Copyright ©  Harshala infrastructure 2016</span></center>  
-            </div>
-        </nav>
-        </footer>
+        {{>footer}}
         </div>
     </div>
 </template>
