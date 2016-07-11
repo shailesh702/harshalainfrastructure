@@ -3,7 +3,6 @@
 
 Template.contact_us_page.onCreated(function(){
     var self= this;
-    Toast.info("Welcome to contact us page");
     this.autorun( function() {
         self.subscribe('contact');        
     });
