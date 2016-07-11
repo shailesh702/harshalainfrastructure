@@ -5,3 +5,43 @@ img#area_of_working{
 	width:100%;
 	border:1px solid black;
 }
+span#title{
+	box-shadow:inset 10px 0px 5px #000099;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+div#img_electrical{
+	height:265px;
+	width: 100%;
+	
+	margin-top: 20px;
+}
+div#img_electrical > img{
+	width: 100%;
+	height:100%
+}
+div#img_plumbing{
+	height:200px;
+	width: 100%;
+}
+div#img_plumbing > img{
+	width: 100%;
+	height:100%;
+}
+div#img_firefighting{
+	height:140px;
+	width:100%;
+}
+div#img_firefighting > img{
+	width: 100%;
+	height:100%;
+}
+div#img_hvac{
+	height:100px;
+	width: 100%;
+}
+div#img_hvac > img{
+	margin-top: 10px;
+	height: 100%;
+	width: 100%;
+}
