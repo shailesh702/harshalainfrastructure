@@ -4,16 +4,21 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#"><img src= "/images/vip1.jpg" alt="New York" width="130px" height="80px"></a>
+                    <a href="#"><img src= "/images/harshala_logo.JPG" alt="Logo"></a>
                 </li>
                 <li><a href="/">Home</a></li>
                 <li><a href="{{pathFor route='about_us'}}">About us</a></li>
-                <li><a href="/working_area">Working Areas</a></li>
+                <!--<li><a href="/working_area">Working Areas</a></li>-->
                 <li><a href="/Safety">Safety</a></li>
-                <li><a href="/upcoming_events">Upcoming Events</a></li>
                 <li><a href="/investor">Investors</a></li>
-                <li><a href="/mep">MEP</a></li>
+                <li id="dropdownsubmenu"><a id="amep" href="/mep">MEP</a>
+                    <ul id="dropdown">
+                        <li><a href="/mep">About Us</a></li>
+                        <li><a href="/working_area">Working areas</a></li>
+                    </ul>
+                </li>
                 <li><a href="/clientPage">Clients</a></li>
+                <li><a href="/upcoming_events">Upcoming Events</a></li>
                 <li><a href="/careerPage">Career</a></li>
                 <li><a href="/contact">Contact us</a></li>
             </ul>

@@ -1,16 +1,21 @@
 <template name="contact_us_page">
-  <img id="contactus" class="img-responsive" src="/images/contactus.jpg" alt="contact_us">
-  <h2 class="text-center">CONTACT US</h2>
-  <form class="contact" style="padding-right:10px;margin-top: 20px;">
+<div class="container-fluid">
+  <img id="contactus" class="img-responsive" src="/images/contact_us.jpg" alt="contact_us">
+  <h2 class="text-center">
+    <span id="content_title">Contact Us</span>
+  </h2>
+  <form class="contact" id="contact_form">
     <div class="row">
-      <div class="col-sm-5" style="padding-right: 0px;line-height: -10px;padding-top: 0px;">
-        <p style="margin-bottom: 0px;">Contact us and we'll get back to you within 24 hours.</p>
-        <p style="margin-top: 0px;margin-bottom: 0px;"><span  class="glyphicon glyphicon-map-marker" style="margin-left: -20px;"></span>
-          <span style="margin-left: 3px;">c/112,B2 first floor, </span></p>
-        <p style="margin-left: 55px;padding-top: 10px;margin-bottom: 0">aditya complex,</p>
-        <p style="margin-left: 55px;padding-top: 10px;margin-bottom: 0;">kamothe, navi Mumbai-410209.</p>
-        <p style="padding-top: 10px;margin-bottom: 0px;"><span class="glyphicon glyphicon-phone" style="margin-left: -20px;" ></span> +91 1234567890</p>
-        <p style="padding-top:10px; "><span class="glyphicon glyphicon-envelope" style="margin-left: -20px;"></span> abc@harshalainfra.com</p>
+      <div class="col-sm-5" id="address_details">
+        <p id="address_title">Contact us and we'll get back to you within 24 hours.</p>
+        <p style="margin: 0px">
+          <span  class="glyphicon glyphicon-map-marker"></span>
+          <span id="address_line1">c/112,B2 first floor, </span>
+        </p>
+        <p id="address_line2">aditya complex,</p>
+        <p id="address_line3">kamothe, navi Mumbai-410209.</p>
+        <p id="address_phone"><span class="glyphicon glyphicon-phone"></span> +91 1234567890</p>
+        <p id="address_email"><span class="glyphicon glyphicon-envelope"></span> abc@harshalainfra.com</p>
       </div>
       <div class="col-sm-7">
         <div class="row">
@@ -36,8 +41,5 @@
       </div>
     </div>
   </form>
-   <!-- Set height and width with CSS -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<!-- code for map -->
-
+</div>
 </template>

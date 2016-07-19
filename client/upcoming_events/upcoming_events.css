@@ -4,3 +4,8 @@ img#upcoming_events{
 	height: 120px;
 	width:100%;
 }
+p#events_para1{
+	margin: 0px 0px 0px 0px;
+	padding: 30px 30px 0px 30px;
+	text-indent: 50px;
+}
