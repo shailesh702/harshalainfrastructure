@@ -4,7 +4,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#"><img src= "/images/harshala_logo.JPG" alt="Logo"></a>
+                    <a href="/"><img src= "/images/harshala_logo.JPG" alt="Logo"></a>
                 </li>
                 <li><a href="/">Home</a></li>
                 <li><a href="{{pathFor route='about_us'}}">About us</a></li>
@@ -13,7 +13,6 @@
                 <li><a href="/investor">Investors</a></li>
                 <li id="dropdownsubmenu"><a id="amep" href="/mep">MEP</a>
                     <ul id="dropdown">
-                        <li><a href="/mep">About Us</a></li>
                         <li><a href="/working_area">Working areas</a></li>
                     </ul>
                 </li>
@@ -24,15 +23,17 @@
             </ul>
         </div>
         
+        <div  style="margin-right: 0px;margin-left: -35px;">
         
-        
-        {{>header}}
-        <div id="page-content-wrapper" style="margin-left: -40px;width: 100%;">
-        <div class="container-fluid" style="margin-top:0px;margin-bottom: 50px;width:100%;padding: 0px;">
-            {{>yield}}
-        </div>
-        
-        {{>footer}}
+            {{>header}}
+            
+            <div id="page-content-wrapper">
+            <div class="container-fluid" style="margin:0px 0px 50px -9px;width:100%;">
+                {{>yield}}
+            </div>
+            
+            {{>footer}}
+            </div>
         </div>
     </div>
 </template>
